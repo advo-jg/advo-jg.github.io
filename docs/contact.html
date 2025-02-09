@@ -261,10 +261,12 @@ background: rgba(255, 51, 31, 0.15);
     }
   </style>
   
-  <form action="https://api.web3forms.com/submit" method="POST">
+  <script src="https://web3forms.com/client/script.js" async="" defer=""></script>
+  
+  <form id="formulier" action="https://api.web3forms.com/submit" method="POST">
       <input type="hidden" name="access_key" value="f98b2322-699b-4eb2-83b3-06d2b2da165e">
       <input type="hidden" name="subject" value="Bericht via website contact formulier">
-      <input type="hidden" name="redirect" value="https://emdockx.github.io/success.html">
+      <input type="hidden" name="redirect" value="https://www.advocaatgoyvaerts.be/success.html">
       
       <label for="name"><br>Naam:</label>
       <input type="text" id="name" name="name" required="">
@@ -278,6 +280,10 @@ background: rgba(255, 51, 31, 0.15);
       <label for="message"><br>Bericht:</label>
       <textarea id="message" name="message" required=""></textarea>
       
+      <br><br>
+      
+       <div class="h-captcha" data-captcha="true" data-lang="nl"></div>
+
       <div class="ginput_container_consent">
         <input type="checkbox" name="privacy" required="">
         <label for="privacy">Ik ga akkoord met het <a href="./documenten/Privacybeleid-Advocaat-Julie-Goyvaerts.pdf" target="_blank">Privacybeleid</a>.</label>
@@ -285,6 +291,22 @@ background: rgba(255, 51, 31, 0.15);
       <br>
       <button class="btn btn-primary" type="submit" style="padding: 5px 5px; text-transform: none;">Verzenden</button>
   </form>
+  
+  <script>
+    const form = document.getElementById('formulier');
+
+    form.addEventListener('submit', function(e) {
+
+        const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+
+    if (!hCaptcha) {
+        e.preventDefault();
+        alert("Gelieve de captcha in te vullen")
+        return
+    }
+});
+</script>
+
   
 </div>
 <p><br></p>
