@@ -165,8 +165,18 @@ body {
                   font-weight: bold; 
                   display: block;">Julie Goyvaerts</a>
       </div>
-      <p><br><br>Advocaat Julie Goyvaerts is een gedreven juriste met expertise in strafrecht en vastgoedrecht, maar ook in diverse andere <a href="expertise.html">rechtsgebieden</a>.</p>
-      <p>Ik verzorg daarnaast ook <a href="vervanging.html">vervangingen</a> voor collega-advocaten, zowel op korte termijn als voor langdurige freelance-samenwerkingen.<br><br></p>
+      <br><br>
+      <a style="text-align: left;
+                  font-size: clamp(15px, 3vw, 20px);
+                  font-weight: normal; 
+                  display: block;"><u>2020</u>: Master in de Rechten</a>
+      <a style="text-align: left;
+                  font-size: clamp(15px, 3vw, 20px);
+                  font-weight: normal; 
+                  display: block;"><u>2021</u>: Getuigschrift Supralat</a>
+      
+      <p><br><br>Advocaat Julie Goyvaerts is een gedreven juriste met expertise in strafrecht en mede-eigendom, maar ook in diverse andere <a href="expertise.html">rechtsgebieden</a>.</p>
+      <p>Naast mijn eigen cliëntenpraktijk verzorg ik ook <a href="vervanging.html">vervangingen</a> voor collega-advocaten, zowel op korte termijn als voor langdurige freelance-samenwerkingen.<br><br></p>
       <ul><li><a href="tel:0032493861566"><i class="fa fa-square-phone"></i></a></li>
           <li><a href="https://wa.link/v9j1jp"><i class="fab fa-square-whatsapp" aria-hidden="true"></i></a></li>
           <li><a href="mailto:julie.goyvaerts@advocaat.be"><i class="fa-solid fa-square-envelope" aria-hidden="true"></i></a></li>
@@ -628,11 +638,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <p id="copyright" class="copyright">Deze achtergrondafbeelding is auteursrechtelijk beschermd door TV RRP/VK/OAP &amp; Regie der Gebouwen</p>
 <footer class="footer">
   <span>
-    <a>© 2025 JULIE GOYVAERTS</a>
+    <a>© <span id="year"></span> JULIE GOYVAERTS</a>
     <a href="./documenten/Algemene-Voorwaarden-Advocaat-Julie-Goyvaerts.pdf" target="_blank">VOORWAARDEN</a>
     <a href="./documenten/Privacybeleid-Advocaat-Julie-Goyvaerts.pdf" target="_blank">PRIVACYBELEID</a>
   </span>
 </footer>
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 
 

@@ -240,7 +240,7 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-date-sort="1734562800000" data-listing-file-modified-sort="1741981492218" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="40">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1734562800000" data-listing-file-modified-sort="1743804531061" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="40">
 <a href="./nieuws/nieuwsblad-20241219.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -265,7 +265,7 @@ Het Nieuwsblad<br>Theo Derkinderen
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-date-sort="1711321200000" data-listing-file-modified-sort="1741981489186" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+<div class="g-col-1" data-index="1" data-listing-date-sort="1711321200000" data-listing-file-modified-sort="1743804526223" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
 <a href="./nieuws/nieuwsblad-20240325.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -290,7 +290,7 @@ Het Nieuwsblad<br>Sam Reyntjens
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-date-sort="1645657200000" data-listing-file-modified-sort="1741981484963" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="40">
+<div class="g-col-1" data-index="2" data-listing-date-sort="1645657200000" data-listing-file-modified-sort="1743804518744" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="40">
 <a href="./nieuws/hln-20220224.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -769,11 +769,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <p id="copyright" class="copyright">Deze achtergrondafbeelding is auteursrechtelijk beschermd door TV RRP/VK/OAP &amp; Regie der Gebouwen</p>
 <footer class="footer">
   <span>
-    <a>© 2025 JULIE GOYVAERTS</a>
+    <a>© <span id="year"></span> JULIE GOYVAERTS</a>
     <a href="./documenten/Algemene-Voorwaarden-Advocaat-Julie-Goyvaerts.pdf" target="_blank">VOORWAARDEN</a>
     <a href="./documenten/Privacybeleid-Advocaat-Julie-Goyvaerts.pdf" target="_blank">PRIVACYBELEID</a>
   </span>
 </footer>
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 
 

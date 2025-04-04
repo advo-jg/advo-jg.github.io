@@ -610,11 +610,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <p id="copyright" class="copyright">Deze achtergrondafbeelding is auteursrechtelijk beschermd door TV RRP/VK/OAP &amp; Regie der Gebouwen</p>
 <footer class="footer">
   <span>
-    <a>© 2025 JULIE GOYVAERTS</a>
+    <a>© <span id="year"></span> JULIE GOYVAERTS</a>
     <a href="/documenten/Algemene-Voorwaarden-Advocaat-Julie-Goyvaerts.pdf" target="_blank">VOORWAARDEN</a>
     <a href="/documenten/Privacybeleid-Advocaat-Julie-Goyvaerts.pdf" target="_blank">PRIVACYBELEID</a>
   </span>
 </footer>
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 
 
