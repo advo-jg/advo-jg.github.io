@@ -1,0 +1,21 @@
+[
+  {
+    "listing": "/expertise.html",
+    "items": [
+      "/expertise/strafrecht.html",
+      "/expertise/medeeigendom.html",
+      "/expertise/huurrecht.html",
+      "/expertise/verkeersrecht.html",
+      "/expertise/familierecht.html",
+      "/expertise/incasso.html"
+    ]
+  },
+  {
+    "listing": "/nieuws.html",
+    "items": [
+      "/nieuws/nieuwsblad-20241219.html",
+      "/nieuws/nieuwsblad-20240325.html",
+      "/nieuws/hln-20220224.html"
+    ]
+  }
+]
