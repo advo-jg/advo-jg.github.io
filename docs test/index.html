@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title> Mijn expertise  – Advocaat Julie Goyvaerts</title>
+<title>Advocaat Julie Goyvaerts</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,10 +24,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <link href=".//documenten/logo/Logo-ZT.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -37,7 +34,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-9cc98ae85609a04d53b19aba2bb4eec0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-4ce8028b66d46487e5ce2b960ade11b8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -53,35 +50,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-T6MGS1XGZX"></script>
 
 <script type="text/javascript">
@@ -92,374 +60,178 @@ gtag('js', new Date());
 gtag('config', 'G-T6MGS1XGZX', { 'anonymize_ip': true});
 </script>
 <style>
-
-      .quarto-title-block .quarto-title-banner h1,
-      .quarto-title-block .quarto-title-banner h2,
-      .quarto-title-block .quarto-title-banner h3,
-      .quarto-title-block .quarto-title-banner h4,
-      .quarto-title-block .quarto-title-banner h5,
-      .quarto-title-block .quarto-title-banner h6
-      {
-        color: black;
-      }
-
-      .quarto-title-block .quarto-title-banner {
-        color: black;
-background: rgba(255, 51, 31, 0.15);
-      }
+  body {
+    background-image: url("documenten/justitie1.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
 </style>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+<meta charset="utf-8">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
+</head><body><nav class="menu-container">
 
-</head>
+  <input type="checkbox" aria-label="Toggle menu">
+    <span></span>
+    <span></span>
+    <span></span>
 
-<body class="nav-fixed">
+
+  <a href="./index.html" class="menu-logo">
+    <img src="./documenten/logo/Logo-WT.png" alt="Advocaat Julie Goyvaerts">
+  </a>
+
+
+  <div class="menu">
+    <ul><li><a href="./over.html">OVER MIJ</a></li>
+        <li><a href="./expertise.html">EXPERTISE</a></li>
+        <li><a href="./tarieven.html">TARIEVEN</a></li>
+        <li><a href="./vervangingen.html">VERVANGINGEN</a></li>
+        <li><a href="./nieuws.html">NIEUWS</a></li>
+    </ul>
+    <ul><li><a href="./index.html">CONTACT</a></li>
+        <li><a href="tel:232423424234"><i class="bi bi-telephone" style="font-size: 1.1rem;"></i></a></li>
+        <li><a href="https://wa.link/v352jp"><i class="bi bi-whatsapp" style="font-size: 1.1rem;" aria-hidden="true"></i></a></li>
+        <li><a href="mailto:fzfzf@zerzer.be"><i class="bi bi-envelope" style="font-size: 1.1rem;" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
-    <nav class="navbar navbar-expand-md " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./documenten/logo/Logo-WT.png" alt="" class="navbar-logo">
-    </a>
-  </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
-<span class="menu-text">HOME</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="./expertise.html" aria-current="page"> 
-<span class="menu-text">EXPERTISE</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./tarieven.html"> 
-<span class="menu-text">TARIEVEN</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./vervanging.html"> 
-<span class="menu-text">VERVANGINGEN</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./nieuws.html"> 
-<span class="menu-text">NIEUWS</span></a>
-  </li>  
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./contact.html"> 
-<span class="menu-text">CONTACT</span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="tel:0032493861566"> <i class="bi bi-telephone" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://wa.link/v9j1jp" target="_blank"> <i class="bi bi-whatsapp" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="mailto:julie.goyvaerts@advocaat.be"> <i class="bi bi-envelope" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
-</div>
-      </div> <!-- /container-fluid -->
-    </nav>
-</header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
-      <h1 class="title"><br>Mijn expertise<br><br></h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
-
-<p><br></p>
-<p><span style="color: #470e22; font-size: 1.2em"><strong>Hiermee kan ik u verder helpen</strong></span></p>
-<p>Als advocaat kan ik u met de volgende rechtstakken helpen. Neem gerust contact op om uw specifieke situatie te bespreken en om te bekijken wat ik voor u kan betekenen (incl.&nbsp;gratis vrijblijvend advies).<br><br></p>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
-  <style>
-    .contact_div {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 10px;
-    }
-
-    .contact_div p {
-      margin: 0;
-      display: flex;
-      align-items: center;
-    }
-
-    .contact_div p a {
-      text-decoration: none;
-      color: #470e22;
-    }
-    
-    .contact_div p a:hover {
-      text-decoration: underline;
-      color: #FF331F;
-    }
-    
-    .contact_icon {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding-left: 10px;
-    }
-
-    .contact_icon i {
-      font-size: 30px;
-      color: #FF331F;
-    }
-    
-    .contact_icon i:hover {
-      filter: brightness(0.8); /* Darken the icon */
-    }
-    
-  </style>
-
-
-
-  <div class="contact_div">
-  
-    <div class="contact_icon">
-      <a href="tel:0032493861566" target="_blank">
-        <i class="fa-solid fa-square-phone"></i>
-      </a>
-      <p>
-        <a href="tel:0032493861566">+32 493 86 15 66</a>
-      </p>
+    <div class="split-text-container">
+    <span class="text-part left">advocaat</span>
+    <!-- <span class="text-part right" href="/expertise.html">Julie Goyvaerts</span> -->
+    <a href="./over.html"><span class="text-part right">Julie Goyvaerts</span></a>
     </div>
 
-    <div class="contact_icon">
-      <a href="https://wa.link/v9j1jp" target="_blank">
-        <i class="fab fa-square-whatsapp"></i>
-      </a>
-      <p>
-        <a href="https://wa.link/v9j1jp">Stuur mij via WhatsApp</a>
-      </p>
-    </div>
+    <style>
+      .split-text-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        padding: 0;
+        margin: 0;
+        color: #fff;
+        gap: 1.5rem;
+        overflow: hidden;
+        color: #fff;
+        overflow: hidden;
+      }
 
-    <div class="contact_icon">
-      <a href="mailto:julie.goyvaerts@advocaat.be" target="_blank">
-        <i class="fa-solid fa-square-envelope"></i>
-      </a>
-      <p>
-        <a href="mailto:julie.goyvaerts@advocaat.be">julie.goyvaerts@advocaat.be</a>
-      </p>
-    </div>
-  </div>
+      .text-part {
+        display: inline-block;
+        position: relative;
+        transform: translateX(0);
+        animation-duration: 1.5s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+      }
+
+      .text-part.left {
+        transform: translateX(-200%);
+        font-family: 'bodoni-72';
+        font-size: 3.5rem;
+        font-weight: bold;
+        src: url("documenten/bodoni-72-book.ttf") format('truetype');
+        color: rgba(255, 51, 31, 0.75);
+        animation-name: slide-in-left;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .text-part.right {
+        transform: translateX(200%);
+        font-family: 'bodoni-72';
+        font-weight: bold;
+        font-size: 5.5rem;
+        src: url("documenten/bodoni-72-book.ttf") format('truetype');
+        color: rgba(255, 255, 255, 0.90);
+        animation-name: slide-in-right;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+      }
+
+      .text-part.right:hover {
+        color: rgba(255, 255, 255, 1);
+        text-shadow: 2px 2px 16px rgba(255, 255, 255, 0.4), 
+                     2px 2px 32px rgba(255, 255, 255, 0.2);
+        transition: all ease-in-out 500ms;
+      }
+
+      @keyframes slide-in-left {
+        0% {transform: translateX(-200%);}
+        100% {transform: translateX(0);}}
+
+      @keyframes slide-in-right {
+        0% {transform: translateX(200%);}
+        100% {transform: translateX(0);}}
+    </style>
+<!-- ```{=html} -->
+<!-- <html> -->
+<!--   <head> -->
+<!--     <meta charset="utf-8"> -->
+<!--     <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script> -->
+<!--     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> -->
+<!--     <title>Personal WebSite</title> -->
+<!--   </head> -->
+<!--   <body> -->
+<!--     <div class="box"> -->
+<!--       <img src="documenten/profielfoto.jpg" alt="" class="box-img"> -->
+<!--       <div style="text-align: center; padding-top: 50px;"> -->
+<!--         <a style="font-size: clamp(40px, 6vw, 55px);  -->
+<!--                   letter-spacing: 2px;  -->
+<!--                   font-weight: bold;  -->
+<!--                   display: block;">Julie Goyvaerts</a> -->
+<!--       </div> -->
+<!--       <br><br> -->
+<!--       <a style="text-align: left; -->
+<!--                   font-size: clamp(15px, 3vw, 20px); -->
+<!--                   font-weight: normal;  -->
+<!--                   display: block;"><u>2020</u>: Master in de Rechten</a> -->
+<!--       <a style="text-align: left; -->
+<!--                   font-size: clamp(15px, 3vw, 20px); -->
+<!--                   font-weight: normal;  -->
+<!--                   display: block;"><u>2023</u>: Getuigschrift Supralat</a> -->
+<!--       <p><br><br>Advocaat Julie Goyvaerts is een gedreven juriste met expertise in strafrecht en mede-eigendom, maar ook in diverse andere <a href="expertise.html">rechtsgebieden</a>.</p> -->
+<!--       <p>Naast mijn eigen cliëntenpraktijk verzorg ik ook <a href="vervanging.html">vervangingen</a> voor collega-advocaten, zowel op korte termijn als voor langdurige freelance-samenwerkingen.<br><br></p> -->
+<!--       <ul><li><a href="tel:0032493861566"><i class="fa fa-square-phone"></i></a></li> -->
+<!--           <li><a href="https://wa.link/v9j1jp"><i class="fab fa-square-whatsapp" aria-hidden="true"></i></a></li> -->
+<!--           <li><a href="mailto:julie.goyvaerts@advocaat.be"><i class="fa-solid fa-square-envelope" aria-hidden="true"></i></a></li> -->
+<!--       </ul> -->
+<!--       <p><a style="text-decoration: underline; font-size: clamp(15px, 5vw, 20px)"; href="contact.html">Neem contact op</a></p> -->
+<!--     </div> -->
+<!--   </body> -->
+<!-- </html> -->
+<!-- ``` -->
 
 
-<p><br></p>
-<hr>
-<p><br></p>
 
-
-
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1743804615810" data-listing-reading-time-sort="3" data-listing-word-count-sort="418">
-<a href="./expertise/strafrecht.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./documenten/strafrecht.jpeg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-<br><b>STRAFRECHT</b><br><br>
-</h5>
-<div class="card-text listing-description">
-<br>Hier komt tekstje.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1743804611722" data-listing-reading-time-sort="3" data-listing-word-count-sort="424">
-<a href="./expertise/medeeigendom.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./documenten/vastgoed.jpeg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-<br><b>MEDE-EIGENDOM</b><br><br>
-</h5>
-<div class="card-text listing-description">
-<br>Hier komt tekstje.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1743804602827" data-listing-reading-time-sort="3" data-listing-word-count-sort="418">
-<a href="./expertise/huurrecht.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./documenten/huurrecht.jpeg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-<br><b><u>(VER)HUREN</u></b><br><br>
-</h5>
-<div class="card-text listing-description">
-<br>Zowel voor <u>verhuurders</u> als voor <u>huurders</u> treed ik reeds verschillende jaren op wanneer het tussen beide tot een geschil komt. Wordt uw huur niet tijdig en correct betaald? Huurt u…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1743804619463" data-listing-reading-time-sort="3" data-listing-word-count-sort="418">
-<a href="./expertise/verkeersrecht.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./documenten/verkeersrecht.jpeg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-<br><b>VERKEERSRECHT</b><br><br>
-</h5>
-<div class="card-text listing-description">
-<br>Bent u gedagvaard om te verschijnen voor de Politierechtbank omwille van een verkeersovertreding of raakte u betrokken bij een verkeersongeval? Zowel voor uw strafrechtelijke verdediging als…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1743804101120" data-listing-reading-time-sort="3" data-listing-word-count-sort="413">
-<a href="./expertise/familierecht.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./documenten/familierecht.jpeg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-<br><b>FAMILIERECHT</b><br><br>
-</h5>
-<div class="card-text listing-description">
-<br>Hier komt tekstje.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1743804607315" data-listing-reading-time-sort="3" data-listing-word-count-sort="418">
-<a href="./expertise/incasso.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./documenten/bouwrecht.jpeg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-<br><b>INCASSO</b><br><br>
-</h5>
-<div class="card-text listing-description">
-<br>Hier komt tekstje.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -885,19 +657,26 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     left: 50%;
     transform: translateX(-50%);
     font-size: 14px;
-    color: rgba(0, 0, 0, 0.25);
-    background: rgba(255, 255, 255, 0);
+    color: rgba(255, 255, 255, 0.0);
+    background: rgba(0, 0, 0, 0);
     padding: 0px 25px 0px 25px;
     border-radius: 8px;
     white-space: normal;
+    animation-name: fade-in-copyright;
+    animation-delay: 3s;
+    animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
     text-align: center;
   }
   .footer {
     width: 100%;
-    background-color: #470e22;
+    background-color: rgba(71, 14, 34, 0.90);
     font-size: clamp(8px, 2vw, 12px);
     color: white;
     text-align: center;
+    flex-shrink: 0;
     padding: 20px 0;
   }
 .footer span a {
@@ -905,6 +684,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     color: white;
     text-decoration: none;
   }
+
+@keyframes fade-in-copyright {
+  0% {color: rgba(255, 255, 255, 0.0);}
+  100% {color: rgba(255, 255, 255, 0.55);}}
+
 </style>
 <p id="copyright" class="copyright">Deze achtergrondafbeelding is auteursrechtelijk beschermd door TV RRP/VK/OAP &amp; Regie der Gebouwen</p>
 <footer class="footer">
