@@ -100,22 +100,22 @@ h6 {
 ------------------------------*/
 .php-email-form .error-message {
   display: none;
-  background: #df1529;
-  color: #ffffff;
+  /* background: #df1529; */
+  color: #000000;
   text-align: left;
   padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
+  /* margin-bottom: 24px; */
+  font-weight: normal;
 }
 
 .php-email-form .sent-message {
   display: none;
-  color: #ffffff;
-  background: #059652;
-  text-align: center;
+  color: #000000;
+  /* background: #059652; */
+  text-align: left;
   padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
+  /* margin-bottom: 24px; */
+  font-weight: normal;
 }
 
 .php-email-form .loading {
@@ -123,7 +123,7 @@ h6 {
   background: var(--surface-color);
   text-align: center;
   padding: 15px;
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
 }
 
 .php-email-form .loading:before {
@@ -169,7 +169,16 @@ h6 {
 .header .logo img {
   max-height: 150px;
   margin-right: 8px;
-  transition: all 0.5s;
+  transition: all 0.5s ease;
+}
+
+.header .logo img:hover {
+  transform: translateY(-4px);
+}
+
+.header .logo img:hover {
+  max-height: 150px;
+  transform: translateY(-4px);
 }
 
 .header .logo h1 {
@@ -223,6 +232,10 @@ h6 {
 
 .scrolled .header .logo img {
   max-height: 50px;
+}
+
+.scrolled .header .logo img:hover {
+  max-height: 100px;
 }
 
 /* Index Page Header
@@ -620,23 +633,12 @@ h6 {
 }
 
 .footer .copyright {
-  padding: 30px 20px;
-}
-
-.footer .copyright a {
-  margin-bottom: 0;
   margin-top: 5px;
-  margin-right: 10px;
-  font-size: 13px;
+  font-size: 15px;
 }
 
-@media (max-width: 768px) {
-  .footer .copyright a {
-    margin-bottom: 0;
-    margin-top: 5px;
-    margin-right: 10px;
-    font-size: 10px;
-  }
+.footer a:hover{
+  text-decoration: underline;
 }
 
 /*--------------------------------------------------------------
@@ -896,6 +898,9 @@ section,
   color: color-mix(in srgb, var(--accent-color), transparent 0%);
 }
 
+.hero span.disclaimer {
+  font-size: 15px;
+}
 
 @media (max-width: 768px) {
   .hero h2 {
@@ -906,11 +911,7 @@ section,
     font-size: 30px;
   }
 
-  .hero p.bottom {
-    font-size: 20px;
-  }
-
-  .hero p.disclaimer {
+  .hero span.disclaimer {
     font-size: 10px;
   }
 }
@@ -931,22 +932,29 @@ section,
 .about .content ul {
   list-style: none;
   padding: 0;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .about .content ul li {
-  padding: 10px 0 0 0;
+  padding: 5px 0 5px 0;
   display: flex;
 }
 
 .about .content ul i {
   color: var(--accent-color);
   margin-right: 0.5rem;
+  margin-left: 0.5rem;
   line-height: 1.2;
   font-size: 1.25rem;
 }
 
 .about .content p:last-child {
   margin-bottom: 0;
+}
+
+.about .content p {
+  margin-right: 20px;
 }
 
 @media (max-width: 768px) {
@@ -1034,7 +1042,7 @@ section,
 # Services Section
 --------------------------------------------------------------*/
 .services .service-item {
-  background-color: var(--surface-color);
+  /* background-color: var(--surface-color); */
   text-align: center;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
   padding: 80px 20px;
@@ -1482,8 +1490,13 @@ section,
   justify-content: center;
   align-items: center;
   border-radius: 4px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
   margin-right: 15px;
+}
+
+.contact .info-item i:hover {
+  color: var(--accent-color);
+  background: var(--contrast-color);
 }
 
 .contact .info-item h3 {
@@ -1499,11 +1512,16 @@ section,
   font-size: 14px;
 }
 
+.contact .info-item p:hover {
+  text-decoration: underline;
+}
+
 .contact .php-email-form {
   height: 100%;
 }
 
 .contact .php-email-form input[type=text],
+.contact .php-email-form input[type=phone],
 .contact .php-email-form input[type=email],
 .contact .php-email-form textarea {
   font-size: 14px;
@@ -1516,12 +1534,14 @@ section,
 }
 
 .contact .php-email-form input[type=text]:focus,
+.contact .php-email-form input[type=phone]:focus,
 .contact .php-email-form input[type=email]:focus,
 .contact .php-email-form textarea:focus {
   border-color: var(--accent-color);
 }
 
 .contact .php-email-form input[type=text]::placeholder,
+.contact .php-email-form input[type=phone]::placeholder,
 .contact .php-email-form input[type=email]::placeholder,
 .contact .php-email-form textarea::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
