@@ -550,8 +550,6 @@ h6 {
   transition: all 0.3s ease-in-out;
 }
 
-
-
 .footer .social-links img {
   width: 24px;
   border-radius: 2px;
@@ -629,7 +627,7 @@ h6 {
 
 .footer .copyright {
   margin-top: 5px;
-  font-size: 15px;
+  font-size: clamp(10px, 12vw, 15px);
 }
 
 .footer a:hover{
@@ -811,7 +809,7 @@ section,
   color: var(--heading-color);
   margin: 0;
   white-space: nowrap;
-  font-size: clamp(20px, 10vw, 36px);
+  font-size: clamp(24px, 12vw, 36px);
   overflow: hidden;
   text-overflow: ellipsis;
   font-weight: 700;
