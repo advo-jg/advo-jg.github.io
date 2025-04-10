@@ -627,7 +627,7 @@ h6 {
 
 .footer .copyright {
   margin-top: 5px;
-  font-size: clamp(10px, 12vw, 15px);
+  font-size: clamp(10px, 5vw, 15px);
 }
 
 .footer a:hover{
@@ -808,10 +808,7 @@ section,
 .section-title p {
   color: var(--heading-color);
   margin: 0;
-  white-space: nowrap;
   font-size: clamp(24px, 12vw, 36px);
-  overflow: hidden;
-  text-overflow: ellipsis;
   font-weight: 700;
   text-transform: uppercase;
 }
