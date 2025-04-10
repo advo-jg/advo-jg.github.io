@@ -787,9 +787,7 @@ section,
 }
 
 .section-title h2 {
-  white-space: nowrap;
-  font-size: clamp(13px, 8vw, 16px);
-  text-overflow: ellipsis;
+  font-size: 15px;
   font-weight: 500;
   padding: 0;
   line-height: 1px;
@@ -813,7 +811,7 @@ section,
   color: var(--heading-color);
   margin: 0;
   white-space: nowrap;
-  font-size: clamp(20px, 8vw, 36px);
+  font-size: clamp(20px, 10vw, 36px);
   overflow: hidden;
   text-overflow: ellipsis;
   font-weight: 700;
