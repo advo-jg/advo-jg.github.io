@@ -713,8 +713,8 @@ h6 {
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 15px;
-  bottom: 15px;
+  right: 25px;
+  bottom: 25px;
   z-index: 99999;
   background-color: var(--accent-color);
   width: 40px;
@@ -949,7 +949,7 @@ section,
 
 @media (max-width: 768px) {
   .hero h2 {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   .hero p.top {
@@ -1077,10 +1077,32 @@ section,
   z-index: 1;
 }
 
+.features .features-item, p, i, h4, li, tr  {
+  transition: all 0.3s ease-in-out;
+}
+
+.features .features-item:hover p, li {
+  color: black;
+}
+
+.features .features-item:hover li {
+  color: black;
+}
+
+.features .features-item:hover i {
+  color: var(--contrast-color);
+}
+
+.features .features-item:hover h4 {
+  text-decoration: underline;
+}
+
 .features .features-item h4 {
   font-size: 20px;
   font-weight: 700;
   margin: 0 0 5px 0;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .features .features-item i {
@@ -1088,6 +1110,7 @@ section,
   color: var(--accent-color);
   margin-right: 20px;
   line-height: 0;
+  padding-top: 20px;
 }
 
 .features .features-item p {
@@ -1096,14 +1119,63 @@ section,
   margin: 0;
 }
 
+.features .features-item p, li {
+  font-size: 15px;
+  color: color-mix(in srgb, var(--default-color), transparent 0%);
+}
+
+.features .col-lg-6 {
+  position: relative;
+}
+
+.features .btn-getstarted {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  font-size: 14px;
+  padding: 8px 30px;
+  width: 100%;
+  border-radius: 4px;
+  transition: 0.3s;
+  border: 2px solid var(--accent-color);
+  display: block;
+  margin: 40px auto 0 auto;
+  width: fit-content;
+}
+
+.features .btn-getstarted:hover {
+  color: var(--accent-color);
+  background: var(--contrast-color);
+  border: 2px solid var(--contrast-color);
+}
+
+.features-item:hover .custable tr {
+  color: black;
+}
+
+.custable tr:hover {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.custable tr {
+  font-size: 15px; 
+}
+
+
+@media (max-width: 768px) {
+  .custable tr {
+    font-size: 10px; 
+  }
+
+}
+
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
 .services .service-item {
-  /* background-color: var(--surface-color); */
   text-align: center;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
-  padding: 80px 20px;
+  padding: 30px 30px;
   height: 100%;
   transition: all ease-in-out 0.3s;
 }
@@ -1124,7 +1196,7 @@ section,
 
 .services .service-item .icon i {
   font-size: 28px;
-  transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.1s;
 }
 
 .services .service-item h3 {
@@ -1141,8 +1213,43 @@ section,
 }
 
 .services .service-item:hover {
-  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.20);
   transform: translateY(-10px);
+  background: var(--accent-color);
+}
+
+.services .service-item:hover .icon {
+  background: var(--contrast-color);
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.20);
+  color: var(--accent-color);
+}
+
+.services .service-item:hover p {
+  color: black;
+}
+
+.services .row gy-4 {
+  position: relative;
+}
+
+.services .btn-getstarted {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  font-size: 14px;
+  padding: 8px 30px;
+  width: 100%;
+  border-radius: 4px;
+  transition: 0.3s;
+  border: 2px solid var(--accent-color);
+  display: block;
+  margin: 40px auto 0 auto;
+  width: fit-content;
+}
+
+.services .btn-getstarted:hover {
+  color: var(--accent-color);
+  background: var(--contrast-color);
+  border: 2px solid var(--contrast-color);
 }
 
 /*--------------------------------------------------------------
@@ -1206,107 +1313,6 @@ section,
   background: var(--accent-color);
   color: var(--background-color);
   border: 2px solid var(--accent-color);
-}
-
-/*--------------------------------------------------------------
-# Portfolio Section
---------------------------------------------------------------*/
-.portfolio .portfolio-filters {
-  padding: 0;
-  margin: 0 auto 20px auto;
-  list-style: none;
-  text-align: center;
-}
-
-.portfolio .portfolio-filters li {
-  cursor: pointer;
-  display: inline-block;
-  padding: 8px 20px 10px 20px;
-  margin: 0;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 1;
-  margin-bottom: 5px;
-  border-radius: 4px;
-  transition: all 0.3s ease-in-out;
-  font-family: var(--heading-font);
-}
-
-.portfolio .portfolio-filters li:hover,
-.portfolio .portfolio-filters li.filter-active {
-  color: var(--contrast-color);
-  background-color: var(--accent-color);
-}
-
-.portfolio .portfolio-filters li:first-child {
-  margin-left: 0;
-}
-
-.portfolio .portfolio-filters li:last-child {
-  margin-right: 0;
-}
-
-@media (max-width: 575px) {
-  .portfolio .portfolio-filters li {
-    font-size: 14px;
-    margin: 0 0 10px 0;
-  }
-}
-
-.portfolio .portfolio-item {
-  position: relative;
-  overflow: hidden;
-}
-
-.portfolio .portfolio-item .portfolio-info {
-  opacity: 0;
-  position: absolute;
-  left: 12px;
-  right: 12px;
-  bottom: -100%;
-  z-index: 3;
-  transition: all ease-in-out 0.5s;
-  background: color-mix(in srgb, var(--background-color), transparent 10%);
-  padding: 15px;
-}
-
-.portfolio .portfolio-item .portfolio-info h4 {
-  font-size: 18px;
-  font-weight: 600;
-  padding-right: 50px;
-}
-
-.portfolio .portfolio-item .portfolio-info p {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  font-size: 14px;
-  margin-bottom: 0;
-  padding-right: 50px;
-}
-
-.portfolio .portfolio-item .portfolio-info .preview-link,
-.portfolio .portfolio-item .portfolio-info .details-link {
-  position: absolute;
-  right: 50px;
-  font-size: 24px;
-  top: calc(50% - 14px);
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  transition: 0.3s;
-  line-height: 0;
-}
-
-.portfolio .portfolio-item .portfolio-info .preview-link:hover,
-.portfolio .portfolio-item .portfolio-info .details-link:hover {
-  color: var(--accent-color);
-}
-
-.portfolio .portfolio-item .portfolio-info .details-link {
-  right: 14px;
-  font-size: 28px;
-}
-
-.portfolio .portfolio-item:hover .portfolio-info {
-  opacity: 1;
-  bottom: 0;
 }
 
 /*--------------------------------------------------------------
