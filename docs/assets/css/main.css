@@ -810,7 +810,7 @@ section,
 .section-title p {
   color: var(--heading-color);
   margin: 0;
-  font-size: 36px;
+  font-size: clamp(16px, 5vw, 36px);
   font-weight: 700;
   text-transform: uppercase;
 }
