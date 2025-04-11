@@ -304,7 +304,7 @@ h6 {
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-hover-color);
-    /* font-weight: bold; */
+    /* scale: 105%; */
     text-decoration: underline;
   }
 
@@ -956,8 +956,6 @@ section,
 .cycling-word.accent {
   color: var(--accent-color);
 }
-
-
 
 @media (max-width: 768px) {
   .hero h2 {
