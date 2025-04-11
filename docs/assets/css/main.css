@@ -1679,6 +1679,16 @@ section,
   background: var(--contrast-color);
 }
 
+@media (max-width: 1000px) {
+  .contact .info-item+.info-item {
+    margin-top: 20px;
+  }
+
+  .contact .info-item+.info-item:last-child {
+    margin-bottom: 20px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
