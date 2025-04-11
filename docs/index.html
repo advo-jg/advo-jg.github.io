@@ -108,7 +108,7 @@
         "vastgoedrecht",
         "verkeersrecht",
         "familierecht",
-        "incasso",
+        "incasso"
       ];
 
       let index = 0;
@@ -122,6 +122,9 @@
           textElement.textContent = words[index];
           if (words[index] !== "in Antwerpen") {
             textElement.classList.add("accent");
+          }
+          if (words[index] == "in Antwerpen") {
+            textElement.classList.remove("accent");
           }
           textElement.style.opacity = 1;
         }, 1000);
@@ -352,6 +355,7 @@
               <div>
                 <h4>Op zoek naar een advocaat voor een vervanging in Antwerpen?</h4>
                 <p>Mijn kantoor bevindt zich vlakbij het Antwerpse Justitiepaleis en het Hof van Beroep. Graag verzorg ik voor u een vervanging zodat u een verplaatsing kan uitsparen of een dubbele boeking kan oplossen. Gelet op mijn expertise kan een vervanging in verschillende materies en rechtbanken:</p>
+                <br>
                 <ul>
                   <li>Vredegerecht</li>
                   <li>Rechtbank van Eerste Aanleg</li>
@@ -361,6 +365,7 @@
                   <li>Raadkamer</li>
                   <li>Onderzoeksrechter</li>
                   <li>Hof van Beroep</li>
+                  <li>Tucht in gevangenis</li>
                 </ul>
               </div>
             </div><!-- End Features Item-->

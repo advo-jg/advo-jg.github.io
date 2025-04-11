@@ -910,7 +910,7 @@ section,
 .hero p.top {
   margin: 10px 0 0 0;
   font-family: 'Bodoni 72';
-  font-size: 45px;
+  font-size: 42px;
   color: color-mix(in srgb, var(--default-color), transparent 0%);
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
 }
@@ -957,11 +957,11 @@ section,
 
 @media (max-width: 768px) {
   .hero h2 {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .hero p.top {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .hero .contact-icons {
