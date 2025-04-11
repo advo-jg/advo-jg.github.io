@@ -618,13 +618,13 @@ h6 {
   display: block;       /* Make the image a block element */
   margin-left: auto;    /* Automatically adds left margin */
   margin-right: auto;   /* Automatically adds right margin */
-  padding-bottom: 50px;
-  max-width: 50%;
+  max-width: max(40%, 200px);
+  padding-bottom: 25px;
   transition: all 0.3s ease;
 }
 
 .footer .footer-newsletter img:hover {
-  max-width: 60%;
+  transform: translateY(-10px);
   transition: all 0.3s ease-in-out;
 }
 
@@ -650,6 +650,10 @@ h6 {
 
   .footer .footer-about .logo span {
     font-size: 20px;
+  }
+
+  .footer .footer-newsletter img {
+    max-width: max(25%, 100px);
   }
 
   .footer .copyright {
