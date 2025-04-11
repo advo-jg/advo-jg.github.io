@@ -941,6 +941,20 @@ section,
 }
 
 
+.cycling-word {
+  display: inline-block;
+  margin-left: 2px;
+  color: white;
+  font-weight: 500;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.cycling-word.accent {
+  color: var(--accent-color);
+}
+
+
+
 @media (max-width: 768px) {
   .hero h2 {
     font-size: 30px;
