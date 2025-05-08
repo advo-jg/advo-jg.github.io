@@ -815,14 +815,16 @@ h6 {
   padding-left: 10px;
 }
 
+.page-title nav ol li a {
+  color: var(--default-color);
+}
+
 .page-title nav ol li+li::before {
   content: "/";
   display: inline-block;
   padding-right: 10px;
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
-
-
 
 /*--------------------------------------------------------------
 # Global Sections
@@ -1831,8 +1833,14 @@ section,
 }
 
 .service-details .services-list a i {
-  font-size: 16px;
-  margin-right: 8px;
+  font-size: 20px;
+  margin-right: 15px;
+  color: var(--default-color);
+}
+
+.service-details .services-list a:hover i {
+  font-size: 20px;
+  margin-right: 15px;
   color: var(--accent-color);
 }
 
