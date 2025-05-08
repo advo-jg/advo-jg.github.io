@@ -96,7 +96,8 @@ h6 {
   font-family: var(--heading-font);
 }
 
-/* PHP Email Form Messages
+/*------------------------------
+# PHP Email Form Messages
 ------------------------------*/
 .php-email-form .error-message {
   display: none;
@@ -760,7 +761,37 @@ h6 {
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
-.page-title .heading h1 {
+.page-title h2 {
+  margin: 0;
+  letter-spacing: 2px;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: 'Bodoni 72';
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.page-title p.top {
+  margin: 10px 0 0 0;
+  font-family: 'Bodoni 72';
+  font-size: 42px;
+  color: color-mix(in srgb, var(--default-color), transparent 0%);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.page-title .line {
+  height: 1px;
+  max-width: 50%;
+  background: color-mix(in srgb, var(--default-color), transparent 0%);
+  margin: 10px auto 20px;
+}
+
+.page-title .call-to-action {
+  padding: 100px 0;
+  position: relative;
+  clip-path: inset(0);
+}
+
+.page-title .call-to-action h1 {
   font-size: 38px;
   font-weight: 700;
 }
@@ -790,6 +821,8 @@ h6 {
   padding-right: 10px;
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
+
+
 
 /*--------------------------------------------------------------
 # Global Sections
@@ -1752,6 +1785,15 @@ section,
 /*--------------------------------------------------------------
 # Service Details Section
 --------------------------------------------------------------*/
+
+.service-page .logo img {
+  max-height: 50px;
+}
+
+.service-page .logo img:hover {
+  max-height: 100px;
+}
+
 .service-details .service-box {
   background-color: var(--surface-color);
   padding: 20px;
@@ -1804,7 +1846,11 @@ section,
 }
 
 .service-details .services-list a:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+  background-color: color-mix(in srgb, var(--contrast-color), transparent 0%);
+  color: var(--accent-color);
+}
+
+.service-details .services-list a.active:hover i {
   color: var(--accent-color);
 }
 
@@ -1862,7 +1908,7 @@ section,
 }
 
 .service-details p {
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .service-details ul {
