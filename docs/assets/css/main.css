@@ -805,12 +805,12 @@ h6 {
 
 @media (max-width: 768px) {
   .page-title .call-to-action h2 {
-    font-size: 22px;
+    font-size: 25px;
   }
 
   .page-title .call-to-action p.top {
     margin-bottom: 15px;
-    font-size: 18px;
+    font-size: 20px;
   }
 
 }
