@@ -805,19 +805,15 @@ h6 {
 
 @media (max-width: 768px) {
   .page-title .call-to-action h2 {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .page-title .call-to-action p.top {
     margin-bottom: 15px;
-    font-size: 16px;
+    font-size: 18px;
   }
 
 }
-
-/* .page-title img {
-  transform: translateY(-25%); display: block; width: 100%;
-} */
 
 .page-title nav {
   background-color: color-mix(in srgb, var(--default-color), transparent 95%);
