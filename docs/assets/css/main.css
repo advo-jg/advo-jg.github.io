@@ -805,19 +805,11 @@ h6 {
 
 @media (max-width: 768px) {
   .page-title .call-to-action h2 {
-    font-size: 25px;
-  }
-
-  .page-title .call-to-action p.top {
     font-size: 20px;
   }
 
-}
-
-@media (max-width: 500px) {
-
   .page-title .call-to-action p.top {
-    font-size: 20px;
+    font-size: 15px;
   }
 
 }
