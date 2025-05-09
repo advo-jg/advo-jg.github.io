@@ -814,6 +814,10 @@ h6 {
 
 }
 
+/* .page-title img {
+  transform: translateY(-25%); display: block; width: 100%;
+} */
+
 .page-title nav {
   background-color: color-mix(in srgb, var(--default-color), transparent 95%);
   padding: 20px 0;
