@@ -814,6 +814,14 @@ h6 {
 
 }
 
+@media (max-width: 500px) {
+
+  .page-title .call-to-action p.top {
+    font-size: 20px;
+  }
+
+}
+
 /* .page-title img {
   transform: translateY(-25%); display: block; width: 100%;
 } */
