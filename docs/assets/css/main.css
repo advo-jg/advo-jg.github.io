@@ -1102,6 +1102,8 @@ section,
 @media (max-width: 768px) {
   .hero .cutout {
     opacity: 0;
+    width: clamp(0px, 0vw, 0px);
+    height: 0%;
     /* optional: fade on mobile so text stays readable */
   }
 }
